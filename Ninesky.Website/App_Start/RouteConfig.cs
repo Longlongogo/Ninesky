@@ -17,7 +17,8 @@ namespace Ninesky.Website
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "Ninesky.Website.Controllers" }
+                //namespaces: new string[] { "Ninesky.Website.Controllers" }
+                namespaces: new string[] { "Ninesky.Website.Areas.Config.Controllers" }
             );
         }
     }
