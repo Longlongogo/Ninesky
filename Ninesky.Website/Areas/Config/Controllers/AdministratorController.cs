@@ -36,8 +36,8 @@ namespace Ninesky.Website.Areas.Config.Controllers
             if (ModelState.IsValid)
             {
                 var _admin = _adminService.Find(a => a.Account == loginVM.Account);
-                if (_admin == null) ModelState.AddModelError("Account", "账号不存在");
-                else if (Encryption.Sha256(loginVM.Password) != _admin.Password) ModelState.AddModelError("Password", "密码不正确");
+                if (_admin == null) ModelState.AddModelError("Account", "账号不存在啊");
+                else if (Encryption.Sha256(loginVM.Password) != _admin.Password) ModelState.AddModelError("Password", "密码不正确啊");
                 else 
                 {
                     _admin.LoginTime = System.DateTime.Now;
