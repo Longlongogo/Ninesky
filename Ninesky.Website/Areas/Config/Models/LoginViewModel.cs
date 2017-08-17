@@ -18,5 +18,15 @@ namespace Ninesky.Website.Areas.Config.Models
         [StringLength(20, MinimumLength = 4, ErrorMessage = "{0}长度{2}-{1}个字符字符")]
         [Display(Name = "密码")]
         public string Password { get; set; }
+
+        //public string Address { get; set; }
+        //private string Address;
+
+        public string Address
+        {
+            get { return "1111111111"; }
+            set { Address = "2222222222222222222222"; }
+        }
+
     }
 }
